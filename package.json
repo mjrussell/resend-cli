@@ -1,0 +1,52 @@
+{
+  "name": "@mjrussell/resend-cli",
+  "version": "0.1.0",
+  "description": "Unofficial CLI for Resend email API",
+  "author": "Matt Russell <matthewjosephrussell@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "resend": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsx src/cli.ts",
+    "watch": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "resend",
+    "email",
+    "cli"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mjrussell/resend-cli"
+  },
+  "bugs": {
+    "url": "https://github.com/mjrussell/resend-cli/issues"
+  },
+  "homepage": "https://github.com/mjrussell/resend-cli#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^22.11.0",
+    "tsup": "^8.3.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.8.3",
+    "vitest": "^2.1.0"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "resend": "^6.7.0"
+  }
+}
